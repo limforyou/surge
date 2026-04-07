@@ -1,8 +1,7 @@
 #!name=广告平台拦截器
-#!desc=此插件是所有去广告插件的基础，只针对广告平台处理。你依然需要安装其他去广告插件来搭配使用，并确保此插件始终排序在顶部。#修改自可莉广告平台拦截器去除taobao相关拦截=https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
+#!desc=此插件是所有去广告插件的基础，依然需要安装其他去广告插件来搭配使用，并确保此插件始终排序在顶部。修改自可莉广告平台拦截器去除taobao相关拦截=https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
 #!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
 #!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#修改自可莉广告平台拦截器去除taobao相关拦截=https://raw.githubusercontent.com/QingRex/LoonKissSurge/refs/heads/main/Surge/Beta/%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0%E6%8B%A6%E6%88%AA%E5%99%A8.beta.sgmodule
 #!category=BetaModule
 #!tag=去广告, 依赖
 #!loon_version=3.2.4(787)
@@ -187,11 +186,6 @@ DOMAIN,opehs.tanx.com,REJECT,extended-matching,pre-matching
 DOMAIN,beacon-api.aliyuncs.com,REJECT,extended-matching,pre-matching
 DOMAIN,adash.man.aliyuncs.com,REJECT,extended-matching,pre-matching
 DOMAIN,applog.uc.cn,REJECT,extended-matching,pre-matching
-DOMAIN,atoken.m.taobao.com,REJECT,extended-matching,pre-matching
-AND,((DOMAIN-KEYWORD,adash,extended-matching),(DOMAIN-SUFFIX,ut.taobao.com,extended-matching)),REJECT,pre-matching
-URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch",REJECT,extended-matching
-DOMAIN,baichuan-sdk.alicdn.com,REJECT,extended-matching,pre-matching
-DOMAIN,acs4baichuan.m.taobao.com,REJECT,extended-matching,pre-matching
 DOMAIN,api.sm.cn,REJECT,extended-matching,pre-matching
 DOMAIN,c.sm.cn,REJECT,extended-matching,pre-matching
 DOMAIN,content-understand-strategy.sm.cn,REJECT,extended-matching,pre-matching
